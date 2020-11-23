@@ -1,13 +1,17 @@
-#date >> /home/lcisnero/Processes/class_crontab_log.txt;
+#Future TODO: Put URL(s) in a separate txt file that the script reads from and output to a separate file for every URL
+MY_URL="https://banner.mines.edu/prod/owa/bwckschd.p_disp_detail_sched?term_in=202110&crn_in=10629" #Insert website name here
+curl $MY_URL | html2text | #Retrieve only the text from all the HTML code
 
-curl "https://banner.mines.edu/prod/owa/bwckschd.p_disp_detail_sched?term_in=202110&crn_in=10629"
-#|html2text |
-# sed -n '/Total Tests/,$p'|
-# sed -n '/303-273-3000/q;p' |
-#head -n-5 >> /home/lcisnero/Processes/class_crontab_log.txt;
+sed -n '/Seats/,$p'| #Begining of parsed text (this line is included)
+sed -n '/Prerequisites:/q;p' #End of parsed text (this line is cut out)
 
+BASEDIR=$PWD
+OUTFILENAME="/data_log.txt" #Make sure this file is created and at the same file level as this script
+OUTFILEDIR=$BASEDIR$OUTFILENAME #Get the output file path
+#date >> $OUTFILEDIR $Note: need sudo privaleges to write to a file
+
+#head -n-1 #>> /home/lcisnero/Processes/class_crontab_log.txt;
 #echo "$" >> /home/lcisnero/Processes/class_crontab_log.txt
-
 #"tr '\n' ' ' < crontab_log.txt" to get into Excel format
 
 #-------------notes to self--------------------
