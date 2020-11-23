@@ -1,2 +1,11 @@
-test
-Mon 23 Nov 11:01:26 MST 2020
+Seat: Capacity, Actual, Remaining. Waitlist: Capacity, Actual, Remaining. Date
+	25	25	0			0	0	0	Mon 23 Nov 12:57:07 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 12:57:12 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 12:57:26 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 12:59:45 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 13:01:23 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 13:01:35 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 13:05:42 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 13:07:30 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 13:07:42 MST 2020
+	25	25	0			0	0	0	Mon 23 Nov 13:20:31 MST 2020
