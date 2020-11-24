@@ -8,11 +8,6 @@ sed -n '/Prerequisites:/q;p' #End of parsed text (this line is cut out)
 BASEDIR=$PWD
 OUTFILENAME="/data_log.txt" #Make sure this file is created and at the same file level as this script
 OUTFILEDIR=$BASEDIR$OUTFILENAME #Get the output file path
-#date >> $OUTFILEDIR $Note: need sudo privaleges to write to a file
-
-#head -n-1 #>> /home/lcisnero/Processes/class_crontab_log.txt;
-#echo "$" >> /home/lcisnero/Processes/class_crontab_log.txt
-#"tr '\n' ' ' < crontab_log.txt" to get into Excel format
 
 #-------------notes to self--------------------
 #Use chmod +x filename.sh to make a shell file executable
